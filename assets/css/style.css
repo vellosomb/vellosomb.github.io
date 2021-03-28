@@ -1,0 +1,107 @@
+/*
+Title: Portfolio
+Author: Marcos Velloso
+Version: 1.0
+
+-----------------------------------------------------------------------------------------------------
+ESTRUTURA BASE
+-----------------------------------------------------------------------------------------------------
+**** DECLARACAO DE VARIAVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** HEADER
+**** FOOTER
+**** PAGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+
+/* ESTILOS GERAIS */
+html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.coluna{
+    flex-basis: 49%;
+}
+
+.hidden{
+    display: none;
+}
+
+/* BODY */
+body{
+    font-family: 'Verdana','Arial', sans-serif;
+}
+
+
+/* HEADER */
+header{
+    background-color: #222085;
+    padding-top: 30px;
+}
+header .container{
+    background-color: white;
+}
+header .linha{
+    align-items: center;
+}
+
+header .coluna-direita{
+    flex-basis: 70%;
+}
+
+header .coluna-esquerda img{
+    max-width: 100%;
+}
+
+header{}
+header .linha {}
+header .coluna {}
+header .coluna img {
+    max-width: 150px;
+    border-radius: 100%;
+}
+header .coluna-esquerda {}
+
+main .skills {
+  padding: 4rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    header .coluna-esquerda img{
+        max-width: 250px;
+        border-radius: 100%;
+    }
+
+    header .coluna-direita {
+        flex-basis: 70%;
+        padding-top: 3px;
+        border-top: 1px solid grey;
+    }
+    
+}
